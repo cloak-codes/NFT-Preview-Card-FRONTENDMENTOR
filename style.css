@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    height: 600px;
+    width: 340px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 56px -11px hsl(0, 0%, 0%);
+}
+
+.cube--image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px 20px 20px 20px;
+}
+
+.image-hover {
+    position: absolute;
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.view-image {
+    height: 60px;
+    width: 60px;
+    margin: 120px;
+    border-radius: 10px;
+
+}
+
+.nft-info {
+    padding: 0 25px 25px 25px;
+    font-size: 1.125rem;
+}
+
+.nft-title {
+    color: white;
+    font-weight: 600;
+    font-size: 1.375rem;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.nft-desc {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    padding-bottom: 10px;
+    line-height: 1.7;
+}
+
+.extra-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.time-left {
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.eth-icon,
+.clock-icon {
+    padding-right: 5px;
+}
+
+hr {
+    background-color: hsl(215, 32%, 27%);
+    border: none;
+    height: .1px;
+    max-width: 100%;
+    margin: 20px;
+}
+
+.avatar {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.name {
+    color: white;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.nft-title:hover {
+    color: hsl(178, 100%, 50%)
+}
+
+.name:hover {
+    color: hsl(178, 100%, 50%)
+}
+
+.image-hover:hover {
+    cursor: pointer;
+    opacity: .5;
+    animation-duration: .5s;
+    animation-name: viewimage;
+}
+
+@keyframes viewimage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: .5;
+    }
+}
